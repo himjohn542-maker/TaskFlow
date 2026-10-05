@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Todo_listController;
 use App\Http\Controllers\auth\authController;
-use App\Http\Controllers\Controller\HomepageController;
+use App\Http\Controllers\HomepageController;
 
 /*
 |--------------------------------------------------------------------------
