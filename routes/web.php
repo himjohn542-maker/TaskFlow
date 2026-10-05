@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Todo_listController;
 use App\Http\Controllers\auth\authController;
+use App\Http\Controllers\Controller\HomepageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +16,7 @@ use App\Http\Controllers\auth\authController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('introPage');
+Route::get('/', [HomepageController::class, 'index'])->name('homepage');
 
 route::middleware('guest')->group(function () {
   //REGISTER ROUTES
